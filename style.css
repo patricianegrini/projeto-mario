@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo_mario {
+    height: 200px;
+    margin-left: 5px;
+
+}
+
+.botao_entre_contato {
+    color: white;
+    background-color: #c51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 75px;
+
+}
+
+.botao_entre_contato:hover {
+    color: #C51111 ;
+    font-size: 16px;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.imagigem_Mario_Luigi {
+    height: 500px;
+}
+
+body {
+    height: 100vh;
+
+}
+
+.caixa_Principal {
+    width: 40%;
+
+}
+
+.caixa_video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+video {
+
+   min-height: 100%;
+   min-width: 100%;
+   position: fixed;
+   top: 0;
+}
+
+.caixa_mae {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    justify-content: space-around;
+    height: 100vh;
+
+}
+
+.mascara {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+.link_whastApp img { 
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;    
+}
+
+.header img {
+    height: 60px;
+
+}
+
+.header a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.header a:hover {
+    color: #C51111;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+
+}
+
+
+
+.form_fale_conosco {
+     background-color: white;
+     display: flex;
+     gap: 20px;
+     flex-direction: column;
+     position: fixed;
+     top: 30%;
+     left:-300px;
+     padding: 20px;
+     border-radius: 5px;
+
+}
+
+.mascara_formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(2,0,36,0.9411414223892682) 53%, rgba(0,12,36,0.9411414223892682) 83%);
+}
+
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18d80f;
+
+
+}
+
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18d80f;
+
+}
+
+.Bt_solicitar_orçamento {
+    color: white;
+    background-color: #c51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
+
+
+
+@media(max-width:1100px){
+
+
+    p {
+        display: none;
+    }
+
+    .caixa_mae{
+        flex-direction: column;
+        padding: 10px;
+        justify-content: flex-start;
+
+    }
+
+    .caixa_Principal{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .imagigem_Mario_Luigi{
+        width: 80vw;
+        height: auto;
+
+    }
+
+    .heade img{
+
+        display: none;
+
+    }
+
+    .header {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .header a {
+        font-size: 20px;
+    }
+}
+
